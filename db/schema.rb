@@ -10,10 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_11_204007) do
+ActiveRecord::Schema.define(version: 2022_08_11_213223) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "sheets", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "name"
+    t.integer "level"
+    t.string "rank"
+    t.integer "stress"
+    t.integer "resolve"
+    t.integer "max_health"
+    t.integer "current_health"
+    t.string "class"
+    t.integer "sanity"
+    t.integer "fear"
+    t.integer "body"
+    t.integer "armor"
+    t.integer "strength"
+    t.integer "speed"
+    t.integer "intellect"
+    t.integer "combat"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
