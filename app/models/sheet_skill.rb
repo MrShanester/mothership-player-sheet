@@ -1,0 +1,2 @@
+class SheetSkill < ApplicationRecord
+end
