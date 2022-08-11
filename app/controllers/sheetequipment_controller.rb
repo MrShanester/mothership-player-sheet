@@ -1,0 +1,2 @@
+class SheetequipmentController < ApplicationController
+end

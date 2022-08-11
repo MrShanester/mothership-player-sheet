@@ -1,0 +1,2 @@
+class SheetEquipment < ApplicationRecord
+end
